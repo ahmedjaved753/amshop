@@ -26,7 +26,7 @@ function Header() {
    <span className="header_optionTwo">Sign In</span>
    </div>
    </Link>
-   <Link to="/" className="header_link">
+   <Link to="/house" className="header_link">
        <div className="header_option">
    <span className="header_optionOne">Home</span>
    <span className="header_optionTwo">& Car rental</span>
