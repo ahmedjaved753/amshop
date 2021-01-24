@@ -10,7 +10,7 @@ function Header() {
     return (
         <nav className='header'>
 
-            <Link to ="/"><img className="header_logo" src="logo.png"/></Link>
+            <Link to ="/"><img className="header_logo" src="image/Logo.png"/></Link>
             
             
             <div className="header_search">

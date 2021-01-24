@@ -1,16 +1,20 @@
 import React from 'react'
 import "./Home.css"
+
 import Product from './Product'
+
 
 function Home() {
     return (
         <div className="home">
-        
-           
-            <div className="home_container">
+ 
 
-            <img className="home_image" src="banner.jpg" alt ="" />
-           
+            <div className="home_container">
+          
+        
+        
+            {/*<img className="home_image" src="banner.jpg" alt ="" />**/}
+          
             <div className="home_row">
             
               {/** product*/}
