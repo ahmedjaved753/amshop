@@ -69,7 +69,7 @@ function Footer() {
         />
         <span className="Footer__Line-message">
           Powered  by &copy;{" "}
-          <a href="http://stjapps.in" target="_blank">
+          <a href="#" target="_blank">
           Amshop Limited 2020-2021  ,USA
           </a>
         </span>
