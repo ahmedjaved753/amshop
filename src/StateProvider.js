@@ -1,14 +1,19 @@
-import React, { createContext, useContext, useReducer } from "react";
+import React, { createContext, useReducer, useContext } from "react";
 
-// Prepares the dataLayer
-export const StateContext = createContext();
+// Need Context API
+// 1. To track basket
+// 2. To Track user
 
-// Wrap our app and provide the Data layer
+// This is Data layer
+export const StateContext = createContext()
+
+// create Provider
 export const StateProvider = ({ reducer, initialState, children }) => (
-  <StateContext.Provider value={useReducer(reducer, initialState)}>
-    {children}
-  </StateContext.Provider>
-);
 
-// Pull information from the data layer
-export const useStateValue = () => useContext(StateContext);
+    <StateContext.Provider value={useReducer(reducer, initialState)}>
+        {children}
+    </StateContext.Provider>
+)
+
+// this is how we use inside component
+export const useStateValue = () => useContext(StateContext)

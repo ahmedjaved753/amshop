@@ -3,61 +3,40 @@ import React from "react";
 import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
 import Header from './Header';
 import './App.css';
-import './App.scss'
 import Home from "./Home";
 import Checkout from "./Checkout";
-import Login from "./Login"
-import ImageSlider from "./Slider"
+import Login from "./Login";
+import CountryProduct from "./Login";
+import StateProductList from "./StateProductList";
 
-function App() {
+function App( ) {
   return (
-
-
-    
-
     <Router>
-       
-
-
  <div className="app">
-
  <Header />
-
- <div className=" container  mt-5 carousel">
- <ImageSlider />
-  </div>
-
-
- 
- 
   <Switch>
-   
-
+  
 
     <Route path="/checkout" >
   
       <Checkout/>
     </Route>
 
-    <Route path="/login">
-  
-   
-    <Login/>
-    
-    </Route>
-      <Route path="/">
-  
+    <Route exact path="/login" component={ Login } />
+    <Route  exact path="/country/list/page" component={ StateProductList } />
+    <Route path="/">
+
   <Home/> 
   </Route>
+  
   
   </Switch>
  
  </div>
 
- 
+
     </Router>
-    
-    
+   
   );
 }
 

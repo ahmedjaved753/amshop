@@ -1,7 +1,13 @@
 
+import {
+  COUNTRY_DROPDOWN_CHANGE
+} from './types';
+
 export const initialState = {
     basket: [],
-    user: null
+    user: null,
+    country:[],
+    showComponent:false
   };
   
   // Selector
@@ -48,7 +54,12 @@ export const initialState = {
           ...state,
           user: action.user
         }
-  
+      case COUNTRY_DROPDOWN_CHANGE:
+        return {
+          ...state,
+          country: action.payload,
+          showComponent: true
+        }
       default:
         return state;
     }
